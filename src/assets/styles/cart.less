@@ -1,0 +1,37 @@
+.cart{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px;
+}
+
+.cart.empty{
+    max-height: 80px;
+}
+
+.cart-item{
+    display: flex;
+    gap: 10px;
+}
+
+.cart-img{
+    width: 90px;
+
+}
+
+.cart-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-remove{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: transparent;
+    background-image: url("../imgs/close.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

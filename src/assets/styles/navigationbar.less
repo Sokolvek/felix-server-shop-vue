@@ -1,0 +1,23 @@
+@import url('./variables.less');
+.nav-list{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+    padding: 10px;
+    border-radius: 25px;
+
+    & > a{
+        color: black;
+    }
+}
+
+.nav-item.active{
+    background-color: @primary-orange;
+}

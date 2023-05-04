@@ -1,0 +1,94 @@
+@import "./variables.less";
+
+.product-card{
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.646);
+}
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    max-width: 700px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 24px;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+
+.popup-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-main{
+    display: flex;
+    gap: 15px;
+}
+
+
+.popup-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popup-footer{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.btn{
+    background-color: @secondary-orange;
+    color: white;
+}
+
+.structure{
+
+    & > p{
+        font-size: 0.75rem;
+    }
+}
+
+.counter{
+    background-color: @light-grey;
+    border-radius: 12px;
+
+    & > button{
+        background-color: none;
+        border: none;
+    }
+
+    & > button,span{
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
